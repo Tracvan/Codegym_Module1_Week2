@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi độ dài</title>
+</head>
+<body>
+<h1>Nhập độ dài feet bạn muốn chuyển đôi</h1>
+<input  type="text" id="met">metters <button type="button" onclick="change()" >Change</button>
+<br>
+<span>Kết quả: </span>  <p id="result" ></p>
+</body>
+</html>
+<script>
+    function change(){
+        let a = parseFloat(document.getElementById("met").value);
+        let result = a * 3.2808
+        document.getElementById("result").innerHTML= result + " feet"
+    }
+</script>

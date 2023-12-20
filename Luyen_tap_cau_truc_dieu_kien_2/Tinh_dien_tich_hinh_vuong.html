@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diện Tích Hình Vuông</title>
+</head>
+<body>
+<h1>Hãy nhập độ dài cạnh a</h1>
+<input id="side" type="text"> <button type="button" onclick="change()">Change</button>
+<br>
+<span>Diện tích hình vuông là: </span> <span id="result"></span>
+</body>
+</html>
+<script>
+    function change() {
+        let a = parseFloat(document.getElementById("side").value)
+        let s = a * 4;
+        document.getElementById("result").innerHTML = s + "m&#178"
+    }
+</script>

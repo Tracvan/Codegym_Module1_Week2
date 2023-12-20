@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích tam giác vuông từ độ dài cạnh a,b</title>
+</head>
+<body>
+<h1>Hãy nhập độ dài 2 cạnh kề</h1>
+<span>Độ dài cạnh a :</span> <input type="text" id="sideA">
+<span>Độ dài cạnh b :</span> <input type="text" id="sideB">
+<button onclick="count()" type="button" id="count">Tính</button>
+<span>Diện tích tam giác vuông là: </span> <span id="result"></span>
+
+</body>
+</html>
+<script>
+    function count(){
+        let a = parseFloat(document.getElementById("sideA").value);
+        let b = parseFloat(document.getElementById("sideB").value);
+        let s = (a*b)/2
+        document.getElementById("result").innerHTML= s +"m&#178"
+
+    }
+</script>

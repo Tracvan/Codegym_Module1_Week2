@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 1</title>
+</head>
+<body>
+<h1>Hãy nhập các số a,b,c</h1>
+<span>Nhập  a</span> <input type="text" id="a"><br>
+<span>Nhập  b</span> <input type="text" id="b"><br>
+
+<button onclick="count()" type="button" id="count">Tính</button>
+<br>
+<span>Kết quả của phương trình trên là:</span> <p id="result"></p>
+</body>
+</html>
+<script>
+    function count() {
+        let a = parseFloat(document.getElementById("a").value)
+        let b = parseFloat(document.getElementById("b").value)
+        let x = (-b)/a
+        if (a == 0 && b == 0) {
+            document.getElementById("result").innerHTML = "Phương Trình vô số nghiệm"
+        } else if (a == 0 && b != 0) {
+            document.getElementById("result").innerHTML = "Phương Trình vô nghiệm"
+        }
+        else{
+            document.getElementById("result").innerHTML= x
+        }
+
+
+    }
+</script>

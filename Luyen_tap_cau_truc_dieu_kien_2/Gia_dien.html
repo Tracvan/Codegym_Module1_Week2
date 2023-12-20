@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giá điẹn</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 2px solid grey;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+<table>
+<tr>
+    <th>Nhập số kí điện</th>
+    <th>Đơn giá</th>
+    <th>Thành tiền</th>
+</tr>
+    <tr>
+        <td><input type="text" id="amount"> </td>
+        <td> 3.000/kwh </td>
+        <td id="result"> </td>
+    </tr>
+</table>
+<button onclick="count()" type="button" id="count">Tính</button>
+</body>
+</html>
+<script>
+    function count(){
+        let a =parseInt(document.getElementById("amount").value)
+        let x = a * 3000
+        document.getElementById("result").innerHTML=x +"VNĐ"
+    }
+</script>
