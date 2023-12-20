@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Icome Tax</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th> Input Your income</th>
+        <th> Percent tax must pay</th>
+        <th> You have to pay </th>
+    </tr>
+    <tr>
+        <td> <input type="text" id="num"></td>
+        <td id="percent"> </td>
+        <td id="amount"> </td>
+        <td id="result">
+            <button type="button" id="doit" onclick="tax()" >Check your tax </button>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+function tax(){
+    let a =parseInt(document.getElementById("num").value)
+    let y;
+
+    if(a<3000){
+        document.getElementById("percent").innerHTML=" You are too poor to pay tax"
+        document.getElementById("amount").innerHTML="Just keep your money"
+    }else if(a<5000){
+        y = 0.08
+        let x = a*y
+        document.getElementById("percent").innerHTML= "8%"
+        document.getElementById("amount").innerHTML=x
+    }else if(a<10000){
+        y = 0.1
+        let x = a*y
+        document.getElementById("percent").innerHTML= "10%"
+        document.getElementById("amount").innerHTML=x
+    }else{
+        y = 0.2
+        let x = a*y
+        document.getElementById("percent").innerHTML= "20%"
+        document.getElementById("amount").innerHTML= x
+
+    }
+}
+</script>
