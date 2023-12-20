@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Do you love me</title>
 </head>
 <body>
-$END$
+<h1>Do You Love Me ?</h1>
+<button onclick="love()" id="yes" type="button">Yes</button>
+<button onmouseover="move()" id="no" type="button" style="position: relative " >No</button>
 </body>
+<script>
+    function love(){
+        alert("<3, Love you")
+    }
+    function move(){
+     let element = document.getElementById("no")
+        element.style.top = Math.floor(Math.random() * 200)+"px"
+        element.style.left=Math.floor(Math.random() * 200)+"px"
+    }
+    no.addEventListener("moveover",move);
+
+
+</script>
 </html>
