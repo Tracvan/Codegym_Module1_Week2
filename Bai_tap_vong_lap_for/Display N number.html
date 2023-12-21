@@ -5,10 +5,14 @@
     <title>Display N number </title>
 </head>
 <body>
+<h2> JavaScipt Loop</h2>
+<p id="demo"></p>
 <script>
     let i;
+    let text =''
     for(i=0;i<5;i++){
-        console.log(i) +"<br>"
+        text += "The number is "+ i + "<br>"
+document.getElementById("demo").innerHTML= text
     }
 </script>
 </body>
