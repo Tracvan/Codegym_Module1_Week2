@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số lớn thứ 2</title>
+</head>
+<body>
+<input type="text" id="num1">
+<br>
+<br>
+<input type="text" id="num2">
+<br>
+<br>
+<input type="text" id="num3">
+<br>
+<br>
+<input type="text" id="num4">
+<button onclick="display()" type="button" id="result">Kết quả</button>
+<br>
+<span>Kết quả là:</span> <p id="final" ></p>
+</body>
+</html>
+<script>
+function display() {
+    let a = parseInt(document.getElementById("num1").value)
+    let b = parseInt(document.getElementById("num2").value)
+    let c = parseInt(document.getElementById("num3").value)
+    let d = parseInt(document.getElementById("num4").value)
+    if (a > b && a > c && a > d) {
+        if (b > c && b > d) {
+            document.getElementById("final").innerHTML = b
+        }
+    }
+    if (b > a && b > c && b > d) {
+        if (a > c && a > d) {
+            document.getElementById("final").innerHTML = a
+        }
+    }
+    if (c > a && c > b && c > d) {
+        if (d > a && d > b) {
+            document.getElementById("final").innerHTML = d
+        }
+    } else {
+        document.getElementById("final").innerHTML = c
+    }
+}
+
+</script>

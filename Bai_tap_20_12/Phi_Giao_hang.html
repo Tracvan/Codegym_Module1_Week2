@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phí Giao Hàng</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<h1>Nhập các dữ liệu dưới đây</h1>
+Khoảng cách <input style="margin-left: 62px" type="text" id="distance">
+<br>
+<br>
+Cân nặng <input style="margin-left: 87px" type="text" id="weight">
+<br>
+<br>
+Phương thức giao hàng <select id="option">
+        <option value="option1">Thường</option>
+        <option value="option2">Nhanh</option>
+        <option value="option3">Hỏa tốc</option>
+</select>
+<button onclick="myFunction()">Tính</button>
+<p id="amount"></p>
+</body>
+</html>
+<script>
+    function myFunction(){
+    let a = parseInt(document.getElementById("distance").value)
+    let b = parseInt(document.getElementById("weight").value)
+    let c = document.getElementById("option").value
+    let result;
+    if(c=="option1"){
+        result = a*15000 + b*1000
+    }else if(c=="option2"){
+        result = (a*15000 +b*1000) *1.5
+    }else if(c=="option3"){
+        result = (a*15000 +b*1000) *1.75
+    }
+        document.getElementById("amount").innerHTML= result + "VNĐ"
+    }
+</script>
