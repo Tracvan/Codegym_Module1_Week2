@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Fibonacci moduro 5 = 0</title>
+</head>
+<body>
+<script>
+    let a =0
+    let b= 1
+    let sum = a +b
+    let r;
+    for(;;){
+        sum = a + b;
+        r = sum % 5
+        if(r==0){
+            alert(sum)
+        break
+        }
+        a = sum
+        sum = a + b;
+        b = sum
+        r = sum % 5
+        if(r==0){
+            alert(sum)
+            break
+        }
+    }
+
+
+</script>
+</body>
+</html>
