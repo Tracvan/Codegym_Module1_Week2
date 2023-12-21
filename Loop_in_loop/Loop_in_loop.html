@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loop in loop</title>
+</head>
+<body>
+<script>
+    let sout;
+    sout = "<table border ='1px' width='300px' cellspacing='0px' cellpadding='3px' >"
+    for(i=1;i<10;i++){
+        sout=sout+"<tr>";
+        for(j=1;j<10;j++){
+            sout = sout + "<td>";
+        }
+        sout=sout+"</tr>";
+    }
+    sout=sout+"</table>";
+    document.write(sout);
+</script>
+</body>
+</html>
