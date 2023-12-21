@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minigame</title>
+</head>
+<body>
+<button type="button" onclick="play()">Chơi</button>
+<script>
+    function play() {
+        for (i = 0; i < 3; i++) {
+            let a = prompt("Hãy nhập số bạn đoán")
+            let b = Math.random() * 10
+            if (a == b) {
+                alert("Chúc Mừng bạn")
+                break
+            } else {
+                alert("Hãy nhập lại số bạn đoán")
+
+            }
+        }alert("Bạn đã hết lượt")
+    }
+</script>
+</body>
+</html>
