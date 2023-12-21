@@ -6,9 +6,20 @@
 </head>
 <body>
 <script>
+    let i=0;
+    let j=0;
     let sout;
     sout = "<table border ='1px' width='300px' cellspacing='0px' cellpadding='3px'>"
-
+for(i=1;i<=10;i++){
+    sout=sout+"<tr>"
+    for(j=1;j<=10;j++){
+        sout=sout+"<td>" + i*j +"</td>"
+    }
+    sout = sout + "</tr>";
+}
+sout=sout+"</table>";
+console.log(sout)
+document.write(sout)
 </script>
 </body>
 </html>
