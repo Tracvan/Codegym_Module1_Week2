@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>While loop</title>
+</head>
+<body>
+<p id='result'></p>
+<script>
+    let a = parseInt(prompt("Hãy nhập một số: và nhập -1 để kết thúc"))
+    let total = 0;
+    while( a != -1) {
+        alert("Số bạn nhập là" + a);
+        total = total + a;
+        a = parseInt(prompt("Hãy nhập một số: và nhập -1 để kết thúc"))
+    }
+    document.getElementById("result").innerHTML=total
+</script>
+</body>
+</html>
