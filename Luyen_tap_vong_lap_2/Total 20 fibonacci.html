@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Total 20 Fibonacci</title>
 </head>
 <body>
-$END$
+<p id='total'></p>
+<script>
+    let a = 0;
+    let b = 1;
+    let sum;
+    let x=1;
+    for (i = 0; i < 9; i++){
+        sum = a + b;
+        x = x + sum;
+        a = sum;
+        sum = a + b;
+        x = x + sum;
+        b = sum;
+    }
+        document.write(x)
+
+</script>
+
 </body>
 </html>
